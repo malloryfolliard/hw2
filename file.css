@@ -1,0 +1,4 @@
+.bg-img{background-image:url("top.jpg"); min-height:380px;}
+	.topnav {overflow:hidden; text-align:center; font-family: "Arial";}
+	.topnav a {padding: 14px 16px; font-size: 17px; text-decoration: none;color:#E4D110;}
+	.topnav a:hover {color:#FFFFFF; background-color:#E4D110;}
