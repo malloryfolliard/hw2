@@ -3,36 +3,36 @@
 <head>
 	<title>Contact Page</title>
 	<meta name='viewport' content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="file.css">
 	<style type="text/css">
-		.bg-img{background-image:url("top.jpg"); min-height:380px;}
-		.topnav {overflow:hidden; text-align:center; font-family: "Arial";}
-		.topnav a {padding: 14px 16px; font-size: 17px; text-decoration: none;color:#E4D110;}
-		.topnav a:hover {color:#FFFFFF; background-color:#E4D110;}
-
 		h3, h5 {text-align: center;}
-		input[type=text], textarea {width:98%; padding: 12px; border: 1px solid #ccc; margin-top: 6px; resize: vertical;}
-		input[type=submit] {background-color: #6D6D67; color: white; padding: 12px 20px; border: none; cursor: pointer;}
+		input[type=text], textarea {width:98%; padding: 12px; border: 1px solid #ccc; margin-top: 6px; resize: vertical}
+		input[type=submit] {background-color: #6D6D67; color: white; padding: 12px 20px; cursor: pointer; border: none; border-radius: 25px;}
 	</style>
 </head>
 <body>
 	<div class="bg-img">
 	<div class="topnav">
-		<h1 style="color:#E4D110"; background-color="color:#FF0000">Pizza Days</h1>
+		<h1 style="color:#E4D110"; background-color="color:#FF0000">PIZZA DAYS</h1>
 		<a class ="active" href="index.html">Home</a>
-		<a href="contact.html">Contact</a>
+		<a href="contact.html"><u>Contact</u></a>
 		<a href="services.html">Services</a>
 	</div>
 	</div>
 	<h3>Contact Us</h1>
 	<h5>Stop by for a quick slice, or leave us a message here:</h5>
-	<form onsubmit="alert('Thanks for the feedback tough guy')"> 
+	<form onsubmit="alert('Thank you for your feedback')"> 
 		<label for="fname">First Name</label>
 		<input type="text" id="fname" name="firstname" placeholder="Your name...">
 		<label for="lname">Last Name</label>
 		<input type="text" id="lname" name="lastname" placeholder="Last name...">
 		<label for="message">Message</label>
-		<input type="text" id="message" name="subject" placeholder="Tell us what's on your mind..." style="height:170px; width:170px">
+		<textarea id="message" name="subject" placeholder="Tell us what's on your mind..." style="height:170px"></textarea>
 		<input type="submit" value="Submit">
 	</form>
+
+	<div class="footer">
+		<p> Free socks with every order! </p>
+	</div>
 </body>
 </html>

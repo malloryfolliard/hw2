@@ -1,30 +1,76 @@
 <!DOCTYPE html>
-<html>
+<html style="box-sizing:border-box;">
 <head>
 	<title>Services Page</title>
 	<meta name='viewport' content="width=device-width, initial-scale=1">
-	<style type="text/css">
-	.bg-img{background-image:url("top.jpg"); min-height:380px;}
-	.topnav {overflow:hidden; text-align:center; font-family: "Arial";}
-	.topnav a {padding: 14px 16px; font-size: 17px; text-decoration: none;color:#E4D110;}
-	.topnav a:hover {color:#FFFFFF; background-color:#E4D110;}
-</style>
+	<link rel="stylesheet" href="file.css">
 </head>
-<body>
+<style type="text/css">
+	.column {float: left; width:33%; margin-bottom:16px; padding: 0 8px;}
+	*, *:before, *:after{box-sizing:inherit;}
+	.card {box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); margin:8px; border-radius: 25px;}
+	.services-page{padding:50px; text-align:center; background-color:#C3C2BE; color:white; }
+	.container {padding 0 16px;}
+	.container::after, .row::after {content: ""; clear:both; display:table;}
+	.sub-heading {color:#808080;}
+	@media screen and (max-width: 650px) {.column {width:100%; display:block;}}
+	h2 {text-align:center}
+
+
+</style>
+<body style="font-family: Arial,Helvetica, sans-seriff; margin:0">
 	<div class="bg-img">
 	<div class="topnav">
-		<h1 style="color:#E4D110"; background-color="color:#FF0000">Pizza Days</h1>
+		<h1 style="color:#E4D110"; background-color="color:#FF0000">PIZZA DAYS</h1>
 		<a class ="active" href="index.html">Home</a>
 		<a href="contact.html">Contact</a>
-		<a href="services.html">Services</a>
+		<a href="services.html"><u>Services</u></a>
 	</div>
 	</div>
-	<ul>
-		<li>Hours: 4:00 PM - 3:00 PM</li>
-		<li>Phone Number: +1 (781) 396-7992</li>
-		<li>Address: 364 Boston Ave Medford, MA 02155</li>
-		<li>Click <a href="https://www.yelp.com/biz/pizza-days-medford" target="_blank">here</a> to check out our Yelp!</li>
-	</ul>
+
+	<div class="services-page">
+		<h1>Services Page</h1>
+		<p>We do delivery, pickup, and even cater school lunches!</p>
+	</div>
+
+	<h2>Info</h2>
+
+	<div class="row">
+		<div class="column">
+			<div class="card">
+				<div class="container">
+					<h2> Call ahead </h2>
+					<p class="sub-heading">Hours: 4:00 PM - 3:00 AM</p>
+					<p>Call <a href="tel:7813967992">(781) 396-7992</a> to order your food now!</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="column">
+			<div class="card">
+				<div class="container">
+					<h2> School Lunches </h2>
+					<p class="sub-heading">Email for more information</p>
+					<p> We are happy to discuss implementing either a reimbursable or á la carte meal program for any age group or school meal program you have in mind. We will work with you to meet your school’s nutritional guidelines with a delicious Pizza Days recipe. We Offer Healthier Alternatives. Email <a href="mailto:malloryfolliard@gmail.com">malloryfolliard@gmail.com</a> to schedule a school lunch catering.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="column">
+			<div class="card">
+				<div class="container">
+					<h2> Find Us </h2>
+					<p class="sub-heading">Located just off of Tufts Campus</p>
+					<p> We are located on <a href="https://www.google.com/maps/place/364+Boston+Ave,+Medford,+MA+02155/@42.4108178,-71.122589,17z/data=!3m1!4b1!4m5!3m4!1s0x89e376c2ae5626f5:0xe3135f63d4c5359!8m2!3d42.4108178!4d-71.1204003364" target="_blank"> Boston Ave Medford, MA 02155 </a>. We having parking as well as beautiful seating in the grass just across the street to enjoy your fresh slice of pizza.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="footer">
+		<p> Free socks with every order! </p>
+	</div>
 
 </body>
 </html>
